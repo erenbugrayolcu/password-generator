@@ -31,10 +31,12 @@ function getRandomCharacter(){
 }
 
 function generatePassword(){
-    let randomPassword = ""
+    let randomPasswordOne = ""
+    let randomPasswordTwo = ""
     for(let i = 0; i < passwordLenght; i++){
-        randomPassword += getRandomCharacter()
+        randomPasswordOne += getRandomCharacter()
+        randomPasswordTwo += getRandomCharacter()
     }   
-    passwordOne.textContent = randomPassword
-    passwordTwo.textContent = randomPassword
+    passwordOne.textContent = randomPasswordOne
+    passwordTwo.textContent = randomPasswordTwo
 }
